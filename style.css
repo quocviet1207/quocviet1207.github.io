@@ -1,0 +1,15 @@
+/* Unified list style for all sections */
+.section-list { list-style:none; padding:0; }
+.section-list li { margin-bottom:0.75em; }
+.section-list li a { color:#0077cc; text-decoration:none; }
+.section-list li a:hover { text-decoration:underline; }
+
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333; }
+.hero { display:flex; align-items:center; padding:2rem; border-bottom:1px solid #eee; }
+.hero img { max-width:270px; height:auto; margin-right:2rem; border-radius:16px; }
+.hero .intro { max-width:600px; }
+.hero .intro h1 { margin:0; font-size:2rem; }
+.hero .links a { margin-right:1rem; color:#0077cc; text-decoration:none; }
+.section { max-width:800px; margin:2rem 0; padding:0 1rem; text-align:left; }
+.section h2 { border-bottom:2px solid #eee; padding-bottom:0.5rem; font-size:1.5rem; }
+footer { text-align:center; padding:2rem; font-size:0.9rem; color:#999; border-top:1px solid #eee;}
