@@ -77,6 +77,32 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
 .personal-info {
   line-height: 1.25;
 }
+.exp-list,
+.lead-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center the content horizontally */
+  justify-content: center;
+  width: 100%;
+}
+
+.exp-list > div,
+.lead-list > div {
+  width: 100%;
+  max-width: 600px;         /* Optional: limit width for better readability */
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+.exp-list > h1,
+.lead-list > h1 {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
