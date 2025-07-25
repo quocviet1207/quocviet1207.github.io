@@ -103,6 +103,54 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
   margin-right: auto;
 }
 
+.exp-list > h1:hover,
+.lead-list > h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center the content horizontally */
+  justify-content: center;
+  width: 100%;
+}
+
+.section > h1 {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proj-list,
+.pub-list {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.see-details-btn {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;   /* Use the same font size as surrounding text */
+  font-family: inherit; /* Use the same font family as surrounding text */
+  margin-left: 0.5em;
+  transition: color 0.2s;
+}
+
+.see-details-btn:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
