@@ -90,6 +90,18 @@
         section.style.display = "none";
       }
     }
+
+    // Show sections by default on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById('exp-details').style.display = "block";
+      document.getElementById('lead-details').style.display = "block";
+      // Hide all <ul> and show all see details buttons by default
+      document.querySelectorAll('#exp-details ul, #lead-details ul').forEach(ul => ul.style.display = "none");
+      document.querySelectorAll('#exp-details .see-details-btn, #lead-details .see-details-btn').forEach(btn => {
+        btn.style.display = "inline-block";
+        btn.textContent = "See details";
+      });
+    });
     function toggleDetails(event, btn) {
       event.stopPropagation();
       const ul = btn.parentElement.querySelector('ul');
