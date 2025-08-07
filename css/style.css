@@ -63,9 +63,16 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
 .main-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 60vh;
   justify-content: center;
   align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26,35,126,0.08);
+  border: 1.5px solid #e0e0e0;
+  /* padding: 2em 2em; */
+  max-width: 950px;
+  margin: 2em auto 0 auto;
 }
 .personal-info {
   max-width: 420px;
@@ -159,5 +166,12 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
   .intro {
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .main-wrapper {
+    max-width: 950px;
+    margin: 2em auto 0 auto;
   }
 }
