@@ -75,10 +75,17 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
   margin: 2em auto 0 auto;
 }
 .personal-info {
-  max-width: 420px;
-  word-break: break-word;
-  text-align: left;
-  align-items: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.personal-info a,
+.personal-info strong {
+  vertical-align: middle;
+  display: inline-block;
 }
 .intro,
 .personal-info {
