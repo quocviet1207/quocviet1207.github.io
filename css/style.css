@@ -438,8 +438,79 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, span, a, nav, section, footer {
   margin-right: 0.5rem;
 }
 
+/* Make news titles look interactive */
+.news-meta strong {
+  cursor: pointer;
+  transition: color 0.18s ease, transform 0.18s ease;
+  color: inherit;
+}
+.news-meta strong:hover {
+  color: #005da8;
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
 @media (max-width: 700px) {
   .news-section {
     padding: 0 1rem;
   }
+}
+
+/* Modal styles for news previews */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 2000;
+}
+.modal-overlay.hidden {
+  display: none;
+}
+.modal {
+  width: min(960px, 96%);
+  max-height: 86vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  border: 1px solid #e6e6e6;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.modal-title {
+  font-weight: 700;
+  color: #003373;
+}
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.modal-body {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.modal-left { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.modal-right { flex: 1; overflow: auto; }
+.modal-main-image-wrap { width: 100%; display: flex; align-items: center; justify-content: center; padding: 0.5rem; }
+.modal-image { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 8px; }
+.modal-thumbs { display:flex; gap:0.5rem; margin-top:0.75rem; flex-wrap:wrap; justify-content:center; }
+.modal-thumb { width: 80px; height: 60px; object-fit:cover; border-radius:6px; cursor:pointer; border:1px solid #eee; }
+.modal-date { color: #666; font-size: 0.95rem; margin-bottom: 0.5rem; }
+.modal-desc { color: #333; line-height:1.6; }
+
+@media (max-width: 700px) {
+  .modal-body { flex-direction: column; }
+  .modal-thumb { width: 60px; height: 48px; }
 }
