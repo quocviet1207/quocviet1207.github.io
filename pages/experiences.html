@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experiences & Leaderships - Le Quoc Viet Pham</title>
+  <title>Experiences — Le Quoc Viet Pham</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -13,106 +13,87 @@
     <a href="experiences.html" class="active">Experiences</a>
     <a href="projects.html">Projects</a>
   </nav>
-  <div class="exp-list">
-    <h1 style="cursor:pointer;" onclick="toggleTitles('exp-details')">Experiences</h1>
-    <div id="exp-details" style="display:none;">
-      <div>
-        <strong>Student Assistant</strong>
-        <button class="see-details-btn" onclick="toggleDetails(event, this)">See details</button><br>
-        UB Immigration Service<br>
-        Jul 2024 - May 2025<br>
-        <ul style="display:none;">
-          <li>Associated with advisors to identify and resolve complex cases, ensuring timely and accurate support for students</li>
-          <li>Assisted in preparing and submitting over 200 pieces of essential immigration paperwork</li>
-          <li>Managed email correspondence, addressing 50+ student concerns and inquiries, increasing office efficiency by 30%</li>
-        </ul>
-        <div style="height: 1.5em;"></div>
-      </div>
-      <div>
-        <strong>Recreation Staff</strong>
-        <button class="see-details-btn" onclick="toggleDetails(event, this)">See details</button><br>
-        UB Recreation<br>
-        May 2024 - Aug 2024
-        <ul style="display:none;">
-          <li>Supervised daily operations of recreational facilities, ensuring a safe and welcoming environment for all participants.</li>
-          <li>Planned and organized a variety of recreational activities and events, catering to diverse community interests and age groups.</li>
-          <li>Provided exceptional customer service, addressing participant inquiries and resolving conflicts promptly.</li>
-          <li>Assisted in maintaining facility cleanliness and equipment, ensuring a high standard of hygiene and functionality.</li>
-        </ul>
-        <div style="height: 1.5em;"></div>
-      </div>
-      <div>
-        <strong>Food Service Worker</strong>
-        <button class="see-details-btn" onclick="toggleDetails(event, this)">See details</button><br>
-        UB Campus Dining & Shops<br>
-        Feb 2024 - May 2024
-        <ul style="display:none;">
-          <li>Provided exceptional service to customers by taking orders, serving food, and addressing customer needs and preferences.</li>
-          <li>Prepared food items according to company standards and recipes, ensuring quality and consistency, and maintaining a clean and organized work environment.</li>
-          <li>Collaborated with team members to ensure smooth operations during peak hours and special events.</li>
-        </ul>
-        <div style="height: 1.5em;"></div>
-      </div>
-    </div>
-  </div>
-  <div class="section-divider"></div>
-  <div class="lead-list">
-    <h1 style="cursor:pointer;" onclick="toggleTitles('lead-details')">Leadership Activities</h1>
-    <div id="lead-details" style="display:none;">
-      <div>
-        <strong>Resident Assistant</strong>
-        <button class="see-details-btn" onclick="toggleDetails(event, this)">See details</button><br>
-        UB Campus Living<br>
-        Aug 2024 - Present <br>
-        <ul style="display:none;">
-          <li>Co-lead a team of 40 paraprofessionals to plan and execute large-scale community events, enforce campus policies, and ensure a safe and inclusive living environment</li>
-          <li>Serve as a first-responder for on-call emergencies, conducting safety rounds, addressing incidents, and documenting reports to maintain community safety and compliance</li>
-          <li>Foster an inclusive environment for 800+ residents by organizing social, educational, and cultural programs that promote engagement, personal growth, and cross-cultural awareness</li>
-        </ul>
-        <div style="height: 1.5em;"></div>
-      </div>
-    </div>
-  </div>
-  <div class="section-divider"></div>
-  <!-- <footer>&copy; 2025 Le Quoc Viet Pham</footer> -->
-  <script>
-    function toggleTitles(id) {
-      const section = document.getElementById(id);
-      if (section.style.display === "none" || section.style.display === "") {
-        section.style.display = "block";
-        // Hide all <ul> and show all see details buttons
-        section.querySelectorAll('ul').forEach(ul => ul.style.display = "none");
-        section.querySelectorAll('.see-details-btn').forEach(btn => {
-          btn.style.display = "inline-block";
-          btn.textContent = "See details";
-        });
-      } else {
-        section.style.display = "none";
-      }
-    }
 
-    // Show sections by default on page load
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById('exp-details').style.display = "block";
-      document.getElementById('lead-details').style.display = "block";
-      // Hide all <ul> and show all see details buttons by default
-      document.querySelectorAll('#exp-details ul, #lead-details ul').forEach(ul => ul.style.display = "none");
-      document.querySelectorAll('#exp-details .see-details-btn, #lead-details .see-details-btn').forEach(btn => {
-        btn.style.display = "inline-block";
-        btn.textContent = "See details";
-      });
-    });
-    function toggleDetails(event, btn) {
-      event.stopPropagation();
-      const ul = btn.parentElement.querySelector('ul');
-      if (ul.style.display === "none" || ul.style.display === "") {
-        ul.style.display = "block";
-        btn.textContent = "Hide details";
-      } else {
-        ul.style.display = "none";
-        btn.textContent = "See details";
-      }
-    }
-  </script>
+  <div class="page-wrapper">
+
+    <!-- ── Research ────────────────────────────── -->
+    <h2 class="subsection-title">Research</h2>
+    <div class="exp-entries">
+      <div class="exp-entry">
+        <div class="exp-time">Fall 2025 – Present</div>
+        <div class="exp-body">
+          <span class="exp-role">Research Assistant</span>
+          <span class="exp-org">UB Robot Form and Function Lab · University at Buffalo</span>
+          <ul>
+            <li>Conduct research on robotic perception and manipulation within the Robot Form and Function Lab.</li>
+            <li>Presented lab research at the Buffalo Museum of Science during Engineering Week 2026, engaging the public with interactive robotics demonstrations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Work Experience ────────────────────── -->
+    <h2 class="subsection-title">Work Experience</h2>
+    <div class="exp-entries">
+      <div class="exp-entry">
+        <div class="exp-time">Jul 2024 – May 2025</div>
+        <div class="exp-body">
+          <span class="exp-role">Student Assistant</span>
+          <span class="exp-org">UB Immigration Service · University at Buffalo</span>
+          <ul>
+            <li>Associated with advisors to identify and resolve complex cases, ensuring timely and accurate support for students.</li>
+            <li>Assisted in preparing and submitting over 200 pieces of essential immigration paperwork.</li>
+            <li>Managed email correspondence, addressing 50+ student concerns and inquiries, increasing office efficiency by 30%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-time">May 2024 – Aug 2024</div>
+        <div class="exp-body">
+          <span class="exp-role">Recreation Staff</span>
+          <span class="exp-org">UB Recreation · University at Buffalo</span>
+          <ul>
+            <li>Supervised daily operations of recreational facilities, ensuring a safe and welcoming environment for all participants.</li>
+            <li>Planned and organized recreational activities and events catering to diverse community interests.</li>
+            <li>Provided customer service, addressing participant inquiries and resolving conflicts promptly.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-time">Feb 2024 – May 2024</div>
+        <div class="exp-body">
+          <span class="exp-role">Food Service Worker</span>
+          <span class="exp-org">UB Campus Dining & Shops · University at Buffalo</span>
+          <ul>
+            <li>Provided service to customers by taking orders, serving food, and addressing customer preferences.</li>
+            <li>Prepared food items according to company standards, maintaining quality, consistency, and a clean environment.</li>
+            <li>Collaborated with team members to ensure smooth operations during peak hours and special events.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Leadership ─────────────────────────── -->
+    <h2 class="subsection-title">Leadership</h2>
+    <div class="exp-entries">
+      <div class="exp-entry">
+        <div class="exp-time">Aug 2024 – Present</div>
+        <div class="exp-body">
+          <span class="exp-role">Resident Assistant</span>
+          <span class="exp-org">UB Campus Living · University at Buffalo</span>
+          <ul>
+            <li>Co-lead a team of 40 paraprofessionals to plan and execute large-scale community events, enforce campus policies, and ensure a safe and inclusive living environment.</li>
+            <li>Serve as a first-responder for on-call emergencies, conducting safety rounds, addressing incidents, and documenting reports to maintain community safety.</li>
+            <li>Foster an inclusive environment for 800+ residents by organizing social, educational, and cultural programs that promote engagement and cross-cultural awareness.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>&copy; 2026 Le Quoc Viet Pham</footer>
 </body>
 </html>

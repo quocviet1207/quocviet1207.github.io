@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - Le Quoc Viet Pham</title>
+  <title>Projects — Le Quoc Viet Pham</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -14,71 +14,53 @@
     <a href="projects.html" class="active">Projects</a>
   </nav>
 
-  <!-- 
+  <!--
     HOW TO ADD A NEW PROJECT:
-    1. Copy the project-card div below
-    2. Fill in the following fields:
-       - src: Path to your project image (e.g., "../assets/my-project.jpg")
-       - alt: Brief image description
-       - href: Link to the project details page (e.g., "project-1.html")
-       - Title: Your project name
-       - Description: Brief summary of the project and technologies used
-    3. Paste it inside the "proj-list" div
-    4. Create a corresponding project details page using the template in "project-details.html"
-    
-    TEMPLATE TO COPY AND PASTE:
+    Copy the project-card block below, fill in the fields, and paste
+    it inside the proj-list div. Then create a detail page using the
+    template in projects-list/project-details.html.
+
     <div class="project-card">
       <div class="project-image">
-        <img src="../assets/project-img/your-image.jpg" alt="Your Project Title">
+        <img src="../assets/project-img/your-image.jpg" alt="Project Title">
       </div>
       <div class="project-details">
-        <h2><a href="project-name.html" class="project-title-link">Your Project Title</a></h2>
-        <p class="project-description">Brief description of your project. Mention the key technologies, purpose, and what you learned.</p>
+        <h2><a href="../projects-list/your-project.html" class="project-title-link">Project Title</a></h2>
+        <p class="project-description">Brief description. Technologies used and what you learned.</p>
       </div>
     </div>
   -->
 
-
-  <div class="section" id="projects">
-    <h1>Projects</h1>
-
-
+  <div class="page-wrapper">
+    <h2 class="subsection-title">Projects</h2>
 
     <div class="proj-list">
 
-      
-    <div class="project-card">
-  <div class="project-image">
-    <img src="../assets/reflex-game-tiva.jpg" alt="Two-Player Reflex Game on Tiva C Microcontroller">
-  </div>
-  <div class="project-details">
-    <h2>
-      <a href="../projects-list/reflex-game-tiva.html" class="project-title-link">
-        Two-Player Reflex Game
-      </a>
-    </h2>
-    <p class="project-description">
-      A two-player reflex competition game on the Tiva C microcontroller using ARM Assembly. Integrated UART communication, GPIO edge-triggered interrupts, RGB LED control, and real-time score tracking.
-    </p>
-  </div>
-</div>
-
-      <!-- Project Card Sample
       <div class="project-card">
         <div class="project-image">
-          <img src="../assets/project-placeholder.jpg" alt="Project Image">
+          <img src="../assets/reflex-game-tiva.jpg" alt="Two-Player Reflex Game on Tiva C Microcontroller">
         </div>
         <div class="project-details">
-          <h2><a href="../projects-list/project-details.html" class="project-title-link">Project Title</a></h2>
-          <p class="project-description">Brief description of your project goes here. This should summarize what the project is about and the key technologies or skills you used.</p>
+          <h2>
+            <a href="../projects-list/reflex-game-tiva.html" class="project-title-link">
+              Two-Player Reflex Game on Tiva C
+            </a>
+          </h2>
+          <p class="project-description">
+            A two-player reflex competition game on the Tiva™ TM4C123GH6PM microcontroller using ARM Assembly. Integrated UART communication, GPIO edge-triggered interrupts, RGB LED control, and real-time score tracking.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Hardware</span>
+            <span class="project-tag">Embedded Systems</span>
+            <span class="project-tag">ARM Assembly</span>
+            <span class="project-tag">Microcontroller</span>
+          </div>
         </div>
-      </div> -->
-
-
+      </div>
 
     </div>
   </div>
-  <div class="section-divider"></div>
-  <!-- <footer>&copy; 2025 Le Quoc Viet Pham</footer> -->
+
+  <footer>&copy; 2026 Le Quoc Viet Pham</footer>
 </body>
 </html>

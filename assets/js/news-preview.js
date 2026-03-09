@@ -12,7 +12,8 @@
         .map(el => {
           const dateEl = el.querySelector('.news-date');
           const date = dateEl ? dateEl.textContent.trim() : '';
-          return { date, html: el.innerHTML };
+          const imagesDir = el.getAttribute('data-images-dir') || '';
+          return { date, html: el.innerHTML, imagesDir };
         })
         .filter(i => i.date)
         .sort((a, b) => b.date.localeCompare(a.date)); // ISO date strings sort lexicographically
@@ -23,7 +24,10 @@
       const container = document.querySelector('#news .news-list');
       if (!container) return;
 
-      container.innerHTML = latest.map(i => `<article class="news-item">${i.html}</article>`).join('');
+      container.innerHTML = latest.map(i => {
+        const dirAttr = i.imagesDir ? ` data-images-dir="${i.imagesDir}"` : '';
+        return `<article class="news-item"${dirAttr}>${i.html}</article>`;
+      }).join('');
     } catch (err) {
       // If fetch fails (e.g., file:// access blocked), leave fallback content in place
       console.error('news-preview: failed to load latest news', err);
