@@ -10,26 +10,62 @@
   <nav class="menu-bar">
     <a href="index.html" class="active">Home</a>
     <a href="pages/publications.html">Publications</a>
-    <a href="pages/experiences.html">Experiences</a>
+    <!-- <a href="pages/experiences.html">Experiences</a> -->
     <a href="pages/projects.html">Projects</a>
   </nav>
 
   <div class="main-wrapper">
+    <h2 class="subsection-title">Introduction</h2>
     <div class="hero">
-      <img src="assets/my-photo.jpg" alt="Le Quoc Viet Pham" />
+      <img src="assets/home-assets/my-photo.jpg" alt="Le Quoc Viet Pham" />
       <div class="intro">
         <h1>Le Quoc Viet Pham</h1>
-        <p style="text-indent: 2em;">Hi, I'm Viet, a rising junior pursuing a B.S. in Computer Engineering with a minor in Robotics at the University at Buffalo. I'm passionate about advancing the field of robotics and AI/ML, with a focus on robotic perception such as SLAM. I'm always happy to connect with others and explore collaborative opportunities - feel free to reach out!</p>
+        <p>Hi, I'm Viet - a junior at the University at Buffalo pursuing a B.S. in Computer Engineering. I am affiliated with the <strong>UB Robot Form and Function Lab</strong>, where my work focuses on both robotic's hardware and software. I am always happy to connect - feel free to reach out!</p>
         <div class="personal-info">
-          <a href="mailto:phamlequocviet1207@gmail.com"><strong>Email</strong></a> /
-          <a href="assets/Resume_Le_Quoc_Viet_Pham_Robotics.pdf" target="_blank" rel="noopener"><strong>CV</strong></a> /
-          <a href="https://github.com/quocviet1207"><strong>GitHub</strong></a> /
-          <a href="https://www.linkedin.com/in/le-quoc-viet-pham/"><strong>LinkedIn</strong></a>
+          <a href="mailto:phamlequocviet1207@gmail.com">Email</a>
+          <a href="assets/home-assets/Resume_Le_Quoc_Viet_Pham_Robotics.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="https://github.com/quocviet1207" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/le-quoc-viet-pham/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <footer>&copy; 2025 Le Quoc Viet Pham</footer> -->
+  <div class="news-wrapper">
+    <div class="section-divider"></div>
+    <section id="news" class="news-section">
+      <h1>News</h1>
+      <div class="news-intro">
+        Recent updates and highlights.
+        <a href="pages/news.html" class="btn btn-secondary">All news</a>
+      </div>
+
+      <div class="news-list">
+        <!-- Latest 3 items loaded from pages/news.html via news-preview.js -->
+        <!-- Fallback content shown when fetch is unavailable (e.g., file://) -->
+
+        <article class="news-item">
+          <div class="news-meta"><span class="news-date">2026-02-22</span><strong>Showcased Robotics Lab Project at Buffalo Museum of Science</strong></div>
+          <p>Presented research work from the UB Robot Form and Function Lab during Engineering Week, engaging the public with interactive robotics demonstrations.</p>
+        </article>
+
+        <article class="news-item">
+          <div class="news-meta"><span class="news-date">2026-02-07</span><strong>Attended Next Level Leadership Mentoring Conference</strong></div>
+          <p>Participated in the University at Buffalo's leadership conference focused on mentorship, professional development, and community leadership.</p>
+        </article>
+
+        <article class="news-item">
+          <div class="news-meta"><span class="news-date">2025-08-20</span><strong>Began Resident Assistant Training at UB Campus Living</strong></div>
+          <p>Started the training program to serve as a Resident Assistant, developing leadership, crisis management, and community engagement skills.</p>
+        </article>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>&copy; 2026 Le Quoc Viet Pham</footer>
+
+  <script src="assets/js/news-preview.js" defer></script>
+  <script src="assets/js/news-modal.js" defer></script>
 </body>
 </html>
