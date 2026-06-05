@@ -274,9 +274,11 @@ a:hover { text-decoration: underline; }
 }
 
 .skills-group-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  color: #222;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   font-family: 'Times New Roman', Times, Georgia, serif;
   margin-bottom: 0.1rem;
 }
@@ -285,16 +287,16 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .skills-category {
   font-size: 0.78rem;
   font-weight: bold;
   color: #aaa;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  min-width: 130px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  width: 150px;
   flex-shrink: 0;
   padding-top: 0.22rem;
 }
@@ -715,7 +717,8 @@ footer {
   .news-item > p { grid-column: 1; }
 
   .skills-wrapper { padding: 1.25rem; }
-  .skills-category { min-width: unset; width: 100%; }
+  .skills-row { flex-wrap: wrap; }
+  .skills-category { width: 100%; }
   .skills-group-label { margin-bottom: 0.2rem; }
 
   .exp-entry { flex-direction: column; gap: 0.2rem; }
