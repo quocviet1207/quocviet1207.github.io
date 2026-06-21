@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to my personal portfolio website repository. This site showcases projects, publications, experiences, and news updates about me.
+Welcome to my personal portfolio website repository. This site showcases my research, experience, and news updates about me.
 
 ## Intro
 
@@ -28,8 +28,7 @@ python -m http.server 8000
 - `index.html` — Homepage (hero + highlights)
 - `css/` — Stylesheet(s) (main file: `css/style.css`)
 - `assets/` — Images and raw assets (photos, resume PDF, etc.)
-- `pages/` — Secondary pages: `publications.html`, `experiences.html`, `projects.html`, `news.html`
-- `projects-list/` — Additional project pages and details
+- `pages/` — Secondary pages: `research.html`, `experiences.html`, `news.html`
 - `README.md` — This file
 
 ## Overall organization
@@ -54,19 +53,13 @@ python -m http.server 8000
 
 ## How to add a Publication
 
-1. Open `pages/publications.html` and add a new list item in the published list. Follow existing markup for date, title, authors, venue, and links.
+1. Open `pages/research.html` and add a new entry under the Publications section (`.pub-list`). Follow existing markup for date, title, authors, venue, and links.
 2. If you have a PDF or asset, add it to `assets/` and link to it from the publication entry.
 
-## How to add an Experience
+## How to add an Experience or Project
 
-1. Edit `pages/experiences.html` and add a new experience block or list item following the existing pattern.
+1. Edit `pages/experiences.html` and add a new entry block (`.exp-entry`) under the Research, Work Experience, Leadership, or Projects section, following the existing pattern.
 2. Use consistent headings and dates to keep the timeline readable.
-
-## How to add a Project
-
-1. Edit `pages/projects.html` to add a new project card in the project list.
-2. For a detailed project page, add an HTML file to `projects-list/` (e.g., `projects-list/my-project.html`) and link to it from the card.
-3. Place project images in `assets/` and reference them from the card or detail page.
 
 ## Styling and responsive notes
 
@@ -79,6 +72,4 @@ python -m http.server 8000
 - To publish, push to your GitHub repository and enable GitHub Pages (if desired) from repository settings.
 
 ---
-
-If you'd like, I can add templates for `publications.html`, `experiences.html`, and `projects.html` to make content additions even easier.
 
