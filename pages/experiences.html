@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experiences — Le Quoc Viet Pham</title>
   <link rel="icon" type="image/png" href="../assets/home-assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <nav class="menu-bar">
-    <a href="../index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="experiences.html" class="active">Experience</a>
-  </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <a class="site-title" href="../index.html">Le Quoc Viet Pham</a>
+      <nav class="menu-bar" id="main-menu" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="news.html">News</a>
+        <!-- Experience page hidden for now: <a href="experiences.html">Experience</a> -->
+      </nav>
+    </div>
+  </header>
 
   <div class="page-wrapper">
 
@@ -136,5 +148,6 @@
   </div>
 
   <footer>Le Quoc Viet Pham</footer>
+  <script src="../assets/js/site-header.js" defer></script>
 </body>
 </html>

@@ -119,10 +119,13 @@
 
     // Delegated click: title is <strong> inside .news-meta
     document.addEventListener('click', async (ev) => {
-      const strong = ev.target.closest('.news-meta strong');
-      if (!strong) return;
-      const item = strong.closest('.news-item');
+      // Open from the title or from the thumbnail photo
+      const trigger = ev.target.closest('.news-meta strong, .news-thumb');
+      if (!trigger) return;
+      const item = trigger.closest('.news-item');
       if (!item) return;
+      const strong = item.querySelector('.news-meta strong');
+      if (!strong) return;
 
       const dateElSrc = item.querySelector('.news-date');
       const date = dateElSrc ? dateElSrc.textContent.trim() : '';
@@ -133,7 +136,8 @@
 
       // Gather images — three possible sources:
       // 1) inline <img> tags inside the article
-      let images = Array.from(item.querySelectorAll('img')).map(i => i.getAttribute('src'));
+      //    (the .news-thumb preview is not part of the gallery)
+      let images = Array.from(item.querySelectorAll('img:not(.news-thumb)')).map(i => i.getAttribute('src'));
 
       // 2) data-images attribute (comma/semicolon-separated list)
       if (!images.length) {
