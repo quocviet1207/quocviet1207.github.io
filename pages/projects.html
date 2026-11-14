@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Le Quoc Viet Pham</title>
+  <meta name="description" content="Robotics and engineering projects by Le Quoc Viet Pham.">
+  <link rel="icon" type="image/png" href="../assets/home-assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <a class="site-title" href="../index.html">Le Quoc Viet Pham</a>
+      <nav class="menu-bar" id="main-menu" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html" class="active" aria-current="page">Projects</a>
+        <a href="news.html">News</a>
+        <!-- Experience page hidden for now: <a href="experiences.html">Experience</a> -->
+      </nav>
+    </div>
+  </header>
+
+  <div class="projects-wrapper">
+    <!-- Each card: picture, name, short description, date.
+         Cards are not links yet. To link one later, change <div class="project-card"> to
+         <a class="project-card" href="https://github.com/..." target="_blank" rel="noopener"> (and </div> to </a>). -->
+    <div class="project-grid">
+      <div class="project-card">
+        <img class="project-card-img" src="../assets/project-img/minesweeper/card.jpg" alt="Minesweeper solver showing a mine-probability heatmap" loading="lazy">
+        <div class="project-card-body">
+          <h2>Minesweeper Probability Solver</h2>
+          <p>Reads a Minesweeper game from the screen, computes the exact chance that each cell is a mine, and recommends or plays the safest next move.</p>
+        </div>
+        <div class="project-card-foot">Nov 2026</div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-img placeholder">Photo coming soon</div>
+        <div class="project-card-body">
+          <h2>3D Human Posture Recognition for Robotic Control</h2>
+          <p>Real-time 3D posture detection with an Intel RealSense camera and MediaPipe, mapping 15+ body postures to control commands for a humanoid robot.</p>
+        </div>
+        <div class="project-card-foot">2025</div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-img placeholder">Photo coming soon</div>
+        <div class="project-card-body">
+          <h2>AI Gym Tracker</h2>
+          <p>A computer-vision application that tracks exercise form in real time, counts repetitions, and gives instant feedback during workouts.</p>
+        </div>
+        <div class="project-card-foot">May 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Le Quoc Viet Pham</footer>
+  <script src="../assets/js/site-header.js" defer></script>
+</body>
+</html>
